@@ -1,0 +1,46 @@
+{% extends "::main.html.twig" %}
+
+{% block title %}SchoolManagerBundle:Course:update{% endblock %}
+
+{% block body %}
+    {{ form_start(form) }}
+
+    <div class="row">
+        <div class="col-md-2">
+            {{ form_label(form.name) }}
+        </div>
+        <div class="col-md-2">
+            {{ form_widget(form.name) }}
+        </div>
+    </div>  
+        
+    <div class="row">
+        <div class="col-md-2">
+            {{ form_label(form.email) }}
+        </div>
+        <div class="col-md-2">
+            {{ form_widget(form.email) }}
+        </div>
+    </div>    
+
+    <div class="row">
+        <div class="col-md-2">
+            {{ form_label(form.phone) }}
+        </div>
+        <div class="col-md-2">
+            {{ form_widget(form.phone) }}
+        </div>
+    </div>    
+        
+    <div class="row">
+        <div class="col-md-2">
+            {{ form_label(form.canTeach) }}
+        </div>
+        <div class="col-md-2" id="canTeach">
+            {{ form_widget(form.canTeach) }}
+        </div>
+    </div>    
+
+
+    {{ form_end(form) }}
+{% endblock %}

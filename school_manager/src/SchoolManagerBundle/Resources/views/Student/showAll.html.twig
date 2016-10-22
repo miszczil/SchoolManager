@@ -1,0 +1,11 @@
+{% extends "::main.html.twig" %}
+
+{% block title %}CodersLabBundle:Tweet:showAll{% endblock %}
+
+{% block body %}
+
+    {% for student in allStudents %}
+        {{ student.name }}<br>
+    {% endfor %}
+    
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "::main.html.twig" %}
+
+{% block title %}SchoolManagerBundle:Subject:new{% endblock %}
+
+{% block body %}
+    {{ form_start(form) }}
+
+    <div class="row">
+        <div class="col-md-2">
+            {{ form_label(form.name) }}
+        </div>
+        <div class="col-md-2">
+            {{ form_widget(form.name) }}
+        </div>
+    </div>  
+        
+    <div class="row">
+        <div class="col-md-2">
+            {{ form_label(form.suggestedStudentAge) }}
+        </div>
+        <div class="col-md-2">
+            {{ form_widget(form.suggestedStudentAge) }}
+        </div>
+    </div>    
+
+    <div class="row">
+        <div class="col-md-2">
+            {{ form_label(form.hourlyRateForMentor) }}
+        </div>
+        <div class="col-md-2">
+            {{ form_widget(form.hourlyRateForMentor) }}
+        </div>
+    </div>    
+        
+    <div class="row">
+        <div class="col-md-2">
+            {{ form_label(form.description) }}
+        </div>
+        <div class="col-md-2">
+            {{ form_widget(form.description) }}
+        </div>
+    </div>  
+
+
+    {{ form_end(form) }}
+{% endblock %}

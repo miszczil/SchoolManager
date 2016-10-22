@@ -1,0 +1,11 @@
+{% extends "::main.html.twig" %}
+
+{% block title %}SchoolManagerBundle:Course:update{% endblock %}
+
+{% block body %}
+    {{ form_start(form) }}
+
+    {{form_widget(form) }}
+    
+    {{ form_end(form) }}
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "::main.html.twig" %}
+
+{% block title %}CodersLabBundle:Tweet:showAll{% endblock %}
+
+{% block body %}
+
+            <h3>{{ course.subject.name }}</h3>
+        <p><strong>{{ course.location }},  {{ course.weekday }} {{ course.starttime}} - {{ course.endtime}}</strong></p>
+            <p>
+                {% for mentor in course.mentors %}
+                    {{ mentor.name }}
+                {% endfor %}<br>
+            </p>
+            <p>{{ course.subject.description }}</p>
+    
+{% endblock %}

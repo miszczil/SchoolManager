@@ -1,0 +1,14 @@
+{% extends "::main.html.twig" %}
+
+{% block title %}CodersLabBundle:Tweet:showAll{% endblock %}
+
+{% block body %}
+
+    {% for mentor in allMentors %}
+        <p>
+            {{ mentor.name }}<br>
+            {{ mentor.email }} |  {{ mentor.phone }}<br>
+{#            Can teach {{ mentor.canTeach }} #}
+    {% endfor %}
+    
+{% endblock %}

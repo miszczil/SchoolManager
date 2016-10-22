@@ -1,0 +1,67 @@
+{% extends "::main.html.twig" %}
+
+{% block title %}SchoolManagerBundle:Subject:new{% endblock %}
+
+{% block body %}
+    
+    <h3>ZAPISZ DZIECKO</h3>
+
+    {{ form_start(form) }}
+
+    <div class="row">
+        <div class="col-md-2">
+            {{ form_label(form.name) }}
+        </div>
+        <div class="col-md-2">
+            {{ form_widget(form.name) }}
+        </div>
+    </div>  
+
+    <div class="row">
+        <div class="col-md-2">
+            {{ form_label(form.age) }}
+        </div>
+        <div class="col-md-2">
+            {{ form_widget(form.age) }}
+        </div>
+    </div>    
+
+    <div class="row">
+        <div class="col-md-2">
+            {{ form_label(form.parentsName) }}
+        </div>
+        <div class="col-md-2">
+            {{ form_widget(form.parentsName) }}
+        </div>
+    </div>    
+
+    <div class="row">
+        <div class="col-md-2">
+            {{ form_label(form.parentsEmail) }}
+        </div>
+        <div class="col-md-2">
+            {{ form_widget(form.parentsEmail) }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">
+            {{ form_label(form.parentsPhone) }}
+        </div>
+        <div class="col-md-2">
+            {{ form_widget(form.parentsPhone) }}
+        </div>
+    </div> 
+        
+    <div class="row">
+        <div class="col-md-2">
+            {{ form_label(form.course) }}
+        </div>
+        <div class="col-md-2">
+            {{ form_widget(form.course) }}
+        </div>
+    </div> 
+
+
+    {{ form_end(form) }}
+{% endblock %}
